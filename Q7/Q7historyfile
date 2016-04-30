@@ -1,0 +1,55 @@
+  593  clear
+  594  mkdir Q7
+  595  cd Q7
+  596  echo "Question 7" >> fileQ7
+  597  clear
+  598  git status
+  599  ls
+  600  git add .
+  601  git commit -am "Q 7"
+  602  clear
+  603  touch Q7part2
+  604  git reset --hard
+  605  touch fileQ7part3
+  606  git add .
+  607  git commit -am"Another commit after clean state"
+  608  git log
+  609  git diff 7c61d5e90c793a8d82d2b7db319c8dc1a0c5e097 83fb74d12d36364aa6b6d4834828edddbaafc984
+  610  git checkout 83fb74d12d36364aa6b6d4834828edddbaafc984
+  611  clear
+  612  git branch
+  613  git branch brach2
+  614  git checkout brach2 
+  615  touch fileonBranc2
+  616  git add .
+  617  git commit -am"file on bracnh"
+  618  git diff master brach2 
+  619  git branch -D brach2 
+  620  git checkout master 
+  621  git branch -D brach2 
+  622  git add .
+  623  git commit -am"finished q7"
+  624  ls
+  625  cd ..
+  626  ls
+  627  git add .
+  628  git commit -am
+  629  git commit -am"fixed Q7"
+  630  git push origin master
+  631  ls
+  632  cd ..
+  633  mkdir q7clone
+  634  cd q7clone/
+  635  git clone https://github.com/salimben60/GitFinal.git
+  636  cd ..
+  637  cd GitFinal2/
+  638  ls
+  639  cd Q7
+  640  clear
+  641  git log
+  642  clear
+  643  history
+  644  history tail -55
+  645  history | tail -55
+  646  ls
+  647  history | tail -55 >> Q7historyfile

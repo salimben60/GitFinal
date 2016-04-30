@@ -1,0 +1,39 @@
+5.  Answer following short questions:
+
+Question: How to delete a Git branch both locally and remotely?
+To remove a local branch from your local system.
+git branch -d {the_local_branch}
+
+To remove a remote branch from the server.
+git push origin --delete <branchName>
+
+Question: How do you undo the last commit?
+git reset --hard HEAD
+
+Question: How to Edit an incorrect commit message in Git?
+git commit --amend
+
+Question: What are the differences between 'git pull' and 'git fetch'?
+A git pull is what you would do to bring a local branch up-to-date with its remote version, while also updating your other remote-tracking branches.
+
+When you fetch, Git gathers any commits from the target branch that do not exist in your current branch and stores them in your local repository
+
+Question: How do you rename the local branch?
+git branch -m oldBranchName newBranchName
+
+Question: How do I remove local files (Not in Repo) from my current Git 
+git clean -f -n
+
+Question: How to Checkout remote Git branch?
+Git checkout –b test origin/test
+
+Question: How do you create a remote Git branch?
+git checkout -b your_branch
+git push <remote-name> <branch-name>
+
+Question: How to Change the URL for a remote Git repository?
+git remote set –url origin https://github.com/username/newreponame
+
+Question: How to Change the author of a commit in Git?
+git commit --amend --author="Author Name <email@address.com>"
+
