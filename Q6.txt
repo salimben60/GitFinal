@@ -1,0 +1,19 @@
+6.   Complete the following steps using git commands on any repository of your choice. You can create your own. Please note the steps and git commands
+1.	Make a fast forward merge
+2.	Undo fast forward merge
+3.	Make Commit on master
+4.	Make 3-way merge
+5.	Undo Merge commit
+6.	Make rebase
+
+1. git merge branch -a
+
+2. git reset -hard HEAD
+
+3. git commit -am "message for commit"
+
+4. git merge branch -a
+
+5. git reset -hard HEAD
+
+6. git rebase 
